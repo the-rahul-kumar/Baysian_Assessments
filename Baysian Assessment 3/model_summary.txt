@@ -1,0 +1,36 @@
+
+Call:
+glm(formula = good_wine ~ fixed.acidity + volatile.acidity + 
+    citric.acid + residual.sugar + chlorides + free.sulfur.dioxide + 
+    total.sulfur.dioxide + density + pH + sulphates + alcohol, 
+    family = binomial(link = "logit"), data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.9878  -0.4351  -0.2207  -0.1222   2.9869  
+
+Coefficients:
+                       Estimate Std. Error z value Pr(>|z|)    
+(Intercept)           2.428e+02  1.081e+02   2.247 0.024660 *  
+fixed.acidity         2.750e-01  1.253e-01   2.195 0.028183 *  
+volatile.acidity     -2.581e+00  7.843e-01  -3.291 0.000999 ***
+citric.acid           5.678e-01  8.385e-01   0.677 0.498313    
+residual.sugar        2.395e-01  7.373e-02   3.248 0.001163 ** 
+chlorides            -8.816e+00  3.365e+00  -2.620 0.008788 ** 
+free.sulfur.dioxide   1.082e-02  1.223e-02   0.884 0.376469    
+total.sulfur.dioxide -1.653e-02  4.894e-03  -3.378 0.000731 ***
+density              -2.578e+02  1.104e+02  -2.335 0.019536 *  
+pH                    2.242e-01  9.984e-01   0.225 0.822327    
+sulphates             3.750e+00  5.416e-01   6.924 4.39e-12 ***
+alcohol               7.533e-01  1.316e-01   5.724 1.04e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1269.92  on 1598  degrees of freedom
+Residual deviance:  870.86  on 1587  degrees of freedom
+AIC: 894.86
+
+Number of Fisher Scoring iterations: 6
+
